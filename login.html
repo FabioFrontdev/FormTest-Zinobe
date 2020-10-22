@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="https://www.zinobe.com/assets/img/logo.svg" alt="Logo Zinobe">
+    </header>
+    <section class="login">
+        <div class="decoration"></div>
+        <div class="login__container">
+            <h2>Regístrate</h2>
+            <form class="login__container--form">
+
+                <input type="text" class="input" id="fname" name="fname" placeholder="Nombres">
+                <input type="text" class="input" id="lname" name="lname" placeholder="Apellidos">
+                <input type="text" class="input" id="señority" name="señority" placeholder="Señority">
+                <select class="input" name="team" id="teamGroup" aria-placeholder="Elige Tu Equipo o area de trabajo">
+                    <option class="input" aria-selected="true">Elige tu grupo o area de trabajo</option> 
+                    <option class="input" value="It">IT</option> 
+                    <option class="input" value="front">Frontend area</option> 
+                    <option class="input" value="back">Backend Area</option> 
+                    <option class="input" value="data">Data</option> 
+                    <option class="input" value="Automatization">Automatization</option> 
+                </select>
+                <input type="password" name="pass" class="input" placeholder="Contraseña">
+                <input type="password" name="confirpass" class="input" placeholder="Confirma tu contraseña">
+                <div class="login__container--remember-me">
+                    <label>
+                        <input type="checkbox" name="checkbox" id="cbox1" value="checkbox">Recuerdame
+                    </label>
+                </div>
+                <div class="login__container--button">
+                    <button class="button">Registrarme</button>
+                </div>
+    
+            </form>
+        </div>
+        <div class="decoration2"></div>
+    </section>
+</body>
+</html>
