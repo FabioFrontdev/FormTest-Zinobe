@@ -16,26 +16,26 @@
             <h2>Regístrate</h2>
             <form class="login__container--form">
 
-                <input type="text" class="input" id="fname" name="fname" placeholder="Nombres">
-                <input type="text" class="input" id="lname" name="lname" placeholder="Apellidos">
-                <input type="text" class="input" id="señority" name="señority" placeholder="Señority">
-                <select class="input" name="team" id="teamGroup" aria-placeholder="Elige Tu Equipo o area de trabajo">
+                <input type="text" class="input" id="fullName" name="fullName" placeholder="Nombre Completo">
+                
+                <select class="input" name="jobTitle" id="jobTitle" aria-placeholder="Elige tu cargo">
                     <option class="input" aria-selected="true">Elige tu grupo o area de trabajo</option> 
-                    <option class="input" value="It">IT</option> 
-                    <option class="input" value="front">Frontend area</option> 
-                    <option class="input" value="back">Backend Area</option> 
-                    <option class="input" value="data">Data</option> 
-                    <option class="input" value="Automatization">Automatization</option> 
+                    <option class="input" name="data" value="data">Data</option> 
+                    <option class="input"  name="techInfra" value="techInfra">Tech infraestructura</option> 
+                    <option class="input" name="techTerm" value="techTerm">Tech Términus</option> 
+                    <option class="input" name="techBigData" value="techBigData">Tech Big Data</option> 
+                    <option class="input" name="design" value="design">Diseño</option>
+                    <option class="input" name="techQA" value="techQA">Tech QA</option>    
+                    <option class="input" name="techPMs" value="techPMs">Tech PM´s</option>    
+                    <option class="input" name="cto" value="cto">CTO</option>        
                 </select>
+
                 <input type="password" name="pass" class="input" placeholder="Contraseña">
+
                 <input type="password" name="confirpass" class="input" placeholder="Confirma tu contraseña">
-                <div class="login__container--remember-me">
-                    <label>
-                        <input type="checkbox" name="checkbox" id="cbox1" value="checkbox">Recuerdame
-                    </label>
-                </div>
+            
                 <div class="login__container--button">
-                    <button class="button">Registrarme</button>
+                    <button type="submit" name="singIn" class="button">Registrarme</button>
                 </div>
     
             </form>
