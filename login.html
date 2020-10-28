@@ -14,12 +14,18 @@
         <div class="decoration"></div>
         <div class="login__container">
             <h2>Regístrate</h2>
-            <form class="login__container--form">
+            <form method="POST" class="login__container--form">
 
                 <input type="text" class="input" id="fullName" name="fullName"  placeholder="Nombre Completo">
                 
+                <select class="input" name="roll" id="rol" value="Elije tu rol" aria-placeholder="Elige tu rol">
+                    <option class="input input__disabled" aria-selected="true">Elige tu rol</option> 
+                    <option class="input" name="admin" value="admin">Administrador</option> 
+                    <option class="input" name="employee" value="employee">Empleado</option>       
+                </select>
+
                 <select class="input" name="jobTitle" id="jobTitle" aria-placeholder="Elige tu cargo">
-                    <option class="input" aria-selected="true">Elige tu grupo o area de trabajo</option> 
+                    <option class="input input__disabled" aria-selected="true">Elige tu grupo o area de trabajo</option> 
                     <option class="input" name="data" value="data">Data</option> 
                     <option class="input" name="techInfra" value="techInfra">Tech infraestructura</option> 
                     <option class="input" name="techTerm" value="techTerm">Tech Términus</option> 
@@ -42,5 +48,19 @@
         </div>
         <div class="decoration2"></div>
     </section>
+    <script>
+        function enviar() {
+            var formulario = document.getElementById("myform");
+            var dato = formulario[0];
+            if (dato.value=="enviar") {
+                alert("Enviando el formulario");
+                formulario.submit();
+                return true;
+            } else {
+                alert("No se envía el formulario");
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>

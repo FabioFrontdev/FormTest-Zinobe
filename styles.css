@@ -69,7 +69,7 @@ body {
 }
 
 .login__container {
-    color:  #1c242c;
+    
     padding: 30px 68px 30px;
     min-height: 600px;
     display: flex;
@@ -100,19 +100,12 @@ body {
 }
 
 .login__container--remember-me {
-    color: #1c242c;
+   
     display: flex;
     justify-content: space-between;
     margin: 10px 0 15px 0;
 }
-.login__container--form a {
-    color:  #1c242c;
-    font-size: 14px;
-    text-decoration: none;
-}
-.login__container--form a:hover {
-    text-decoration: underline;
-}
+
 .login__container--register {
     font-size: 14px;
     text-align: center;
@@ -139,6 +132,10 @@ body {
     outline: none;
     height: 50px;
 }
+.input__disabled {
+    color: red !important;
+}
+
 ::placeholder {
     color:  #1c242c;
 }
